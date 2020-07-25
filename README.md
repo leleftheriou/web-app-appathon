@@ -1,10 +1,13 @@
 ## web-app-appathon
 
-Run not Rain is an idea about a web application that will provide user with information about the best places to go 
-for running/walking in major cities in Greece depanding on the current weather.The application will use a database
-with all the available places in Greece and will connect to weather API and provide the user with the info about 
-the places he is intrested.
+Η βάση μου θα περιέχει ένα dataset το οποιό θα έχει τοποθεσίες (πόλη,δήμος,μέρος,πληροφορίες για το μέρος) που θα προτείνωνται για άθληση/περπάτημα.
+Για κάθε μέρος θα αναφέρονται τα καιρικά φαινόμενα (θερμοκρασία,υγρασία,πίεση,συνολική εικόνα του καιρού).
 
-Technologies used 
+Τα στοιχεία τα οποία αφορούν τον καιρό θα ανανεώνονται κάθε μία ώρα και θα τα αντλώ απο το παρακάτω web service (Current Weather Data) https://openweathermap.org/api.
 
-MySQL,Java,Javacript,HTML,CSS
+O χρήστης στο Front End θα έχει την δυνατότητα επιλογής πόλης/δήμος/μέρος θα κάνει search και το Back End θα παίρνει τo query και θα του επιστρεφει την αντιστοίχηση των επιλογών του χρήστη για να δει το καιρό και πληροφορίες για το μέρος.
+
+Front-End ( Js, HTML, CSS )
+Back-End ( Nodejs )
+Database( MongoDB )
+
