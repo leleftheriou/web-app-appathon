@@ -26,14 +26,14 @@ Database( MongoDB )
 Κατεβάζουμε κάποια επιπλέον tools απο τον παρακάτω σύνδεσμο https://docs.mongodb.com/database-tools/installation/#install-tools για να μπορέσουμε να κάνουμε import την βάση μας απο το txt που την έχουμε.Ανοίγουμε τα tools που κατεβάσαμε και αντιγράφουμε ότι έχει μέσα στο φάκελο bin για να το κάνουμε επικόλληση στον φάκελο bin της MongoDB που εγκαταστήσαμε προηγουμένως.Μόλις το κάνουμε ανοίγουμε το terminal στον path που είμαστε μέσα στο bin έχωντας πρώτα κάνει clone το το project για να ξέρουμε σε ποιό Path είναι αποθηκευμένο το txt αρχείο που είναι και η βάση που έχουμε δημιουργήσει.
 Παταμε την παρακάτω εντολή στο terminal αλλα πρώτα επιβεβαιώνουμε οτι είμαστε μέσα στο bin της MongoDB.
 
-mongoimport --db appathonDB --collection locations --type csv  --file  {path}\appathonDB.txt --headerline
+<b>mongoimport --db appathonDB --collection locations --type csv  --file  {path}\appathonDB.txt --headerline</b>
 
 Τώρα είμαστε έτοιμοι να εγκαταστήσουμε το nodejs απο τον παρακάτω σύνδεσμο https://nodejs.org/en/download/ . 
-Μόλις το εγκαταστήσουμε  ανοίγουμε ενα terminal ως διαχειριστές μεσα στο φάκελο της εφαρμογής και εγκαθιστούμε το npm με την εντολή npm install.
+Μόλις το εγκαταστήσουμε  ανοίγουμε ενα terminal ως διαχειριστές μεσα στο φάκελο της εφαρμογής και εγκαθιστούμε το npm με την εντολή <b>npm install</b>.
 Τέλος πατάμε την παρακάτω εντολη για να εγκαταστήσουμε τα υπόλοιπα packages και είμαστε έτοιμοι να ξεκινήσουμε τον server μας.
 
 <b>npm install express body-parser ejs mongoose</b>
 
 Για να ξεκινήσουμε τον server με node παταμε node app.js στον terminal.
-Έχουμε σηκώσει τον server μας στην localhost στο port 3000 και είμαστε έτοιμοι να χρησιμοποιήσουμε την εφαρμογή.
+Έχουμε σηκώσει τον server μας στην localhost στο port 3000 και είμαστε έτοιμοι να χρησιμοποιήσουμε την εφαρμογή πληκτρολογώντας σε έναν browser τον σύνδεσμο localhost/3000 ή 127.0.0.1:3000.
 
