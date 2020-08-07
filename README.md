@@ -13,9 +13,9 @@
 ### Τεχνολογίες
 <hr>
 
-<p>Front-End ( Js, HTML, CSS )
+Front-End ( Js, HTML, CSS )
 Back-End ( Nodejs )
-Database( MongoDB )</p>
+Database( MongoDB )
 
 ### Documentation
 <hr>
@@ -24,13 +24,14 @@ Database( MongoDB )</p>
 
 Αρχικά κατεβάζουμε την MongoDB απο τον παρακάτω σύνδεσμο [MongoDB Download](https://www.mongodb.com/try/download/enterprise) και την εγκαθιστούμε.</p>
 
-<p>Έπειτα κατεβάζουμε κάποια επιπλέον tools απο τον παρακάτω σύνδεσμο [MongoDB tools](https://docs.mongodb.com/database-tools/installation/#install-tools) για να μπορέσουμε να κάνουμε import την βάση μας απο το <i> txt </i> που την έχουμε.Ανοίγουμε τα tools που κατεβάσαμε και αντιγράφουμε ότι έχει μέσα στο φάκελο bin για να το κάνουμε επικόλληση στον φάκελο bin της MongoDB που εγκαταστήσαμε προηγουμένως.</p>
+<p>Έπειτα κατεβάζουμε κάποια επιπλέον tools απο τον παρακάτω σύνδεσμο [MongoDB tools](https://docs.mongodb.com/database-tools/installation/#install-tools) 
+  για να μπορέσουμε να κάνουμε import την βάση μας απο το <i> txt </i> που την έχουμε.Ανοίγουμε τα tools που κατεβάσαμε και αντιγράφουμε ότι έχει μέσα στο φάκελο bin για να το κάνουμε επικόλληση στον φάκελο bin της MongoDB που εγκαταστήσαμε προηγουμένως.</p>
 </p>Μόλις το κάνουμε ανοίγουμε το terminal στον path που είμαστε μέσα στο bin έχωντας πρώτα κάνει clone το το project για να ξέρουμε σε ποιό Path είναι αποθηκευμένο το <i>txt</i>αρχείο που είναι και η βάση που έχουμε δημιουργήσει.
 Πληκτρολογούμε την παρακάτω εντολή στον terminal που ανοίξαμε.</p>
 
 `mongoimport --db appathonDB --collection locations --type csv  --file  {path}\appathonDB.txt --headerline`
 
-<p>Τώρα είμαστε έτοιμοι να εγκαταστήσουμε το nodejs απο τον παρακάτω σύνδεσμο [Nodejs Download](https://nodejs.org/en/download/). 
+<p>Τώρα είμαστε έτοιμοι να εγκαταστήσουμε το nodejs απο τον παρακάτω σύνδεσμο [Nodejs Download](https://nodejs.org/en/download/) . 
 
 Μόλις το εγκαταστήσουμε  ανοίγουμε ενα terminal ως διαχειριστές μεσα στο φάκελο της εφαρμογής και εγκαθιστούμε το npm με την εντολή `npm install` .
 
