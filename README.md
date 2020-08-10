@@ -25,8 +25,9 @@ Database( MongoDB )
 Αρχικά κατεβάζουμε την MongoDB απο τον παρακάτω σύνδεσμο [MongoDB Download](https://www.mongodb.com/try/download/enterprise) και την εγκαθιστούμε.</p>
 
 <p>Έπειτα κατεβάζουμε κάποια επιπλέον tools απο τον παρακάτω σύνδεσμο <a  href='https://docs.mongodb.com/database-tools/installation/#install-tools'>Mongo Tools Download </a> 
-  για να μπορέσουμε να κάνουμε import την βάση μας απο το <i> txt </i> που την έχουμε.Ανοίγουμε τα tools που κατεβάσαμε και αντιγράφουμε ότι έχει μέσα στο φάκελο bin για να το κάνουμε επικόλληση στον φάκελο bin της MongoDB που εγκαταστήσαμε προηγουμένως.</p>
-</p>Μόλις το κάνουμε ανοίγουμε το terminal στον path που είμαστε μέσα στο bin έχωντας πρώτα κάνει clone το το project για να ξέρουμε σε ποιό Path είναι αποθηκευμένο το <i>txt</i>αρχείο που είναι και η βάση που έχουμε δημιουργήσει.
+για να μπορέσουμε να κάνουμε import την βάση μας απο το <i> txt </i> που την έχουμε.Ανοίγουμε τα tools που κατεβάσαμε και αντιγράφουμε ότι έχει μέσα στο φάκελο bin για να το κάνουμε επικόλληση στον φάκελο bin της MongoDB που εγκαταστήσαμε προηγουμένως.</p>
+</p>Μόλις το κάνουμε ανοίγουμε το terminal στον path που είμαστε μέσα στο bin έχωντας πρώτα κάνει clone το το project με την παρακάτω εντολή 
+`git clone https://github.com/leleftheriou/web-app-appathon.git` για να ξέρουμε σε ποιό Path είναι αποθηκευμένο το <i>txt</i>αρχείο που είναι και η βάση που έχουμε δημιουργήσει.
 Πληκτρολογούμε την παρακάτω εντολή στον terminal που ανοίξαμε.</p>
 
 `mongoimport --db appathonDB --collection locations --type csv  --file  {path}\appathonDB.txt --headerline`
