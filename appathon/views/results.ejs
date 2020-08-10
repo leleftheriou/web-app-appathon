@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rain Not Run</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</li>
+</head>
+
+<body>
+	<header id="main-header">
+		<div class="Head-container">
+			<abbr title="Home Page"><a href="index.html"><img src="images/logo.png" width="100" alt="logo"> </a></abbr>
+
+		</div>
+	</header>
+
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a class="button" href="index.html">Home</a></li>
+				<li><a class="button" href="about.html">About</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="Main-foto">
+		<div class="container">
+			<section id="main">
+				<h1>Weather condition in this area:</h1>
+			</section>
+			<div class="block">
+
+
+				<section id="main-W" style="width:200px;">
+					<div style="height:40px;"><strong> <%= tmp %>°</strong> </div>
+					<div>
+						<div><strong> <%= desc %></strong> </div>
+						<img src="<%= img %>">
+					</div>
+				</section>
+			</div>
+			<div class="block">
+				<aside id="side">
+					<table class='table'>
+						<tr class='Headtr'>
+							<th>Places To Run</th>
+							<th>Address</th>
+						</tr>
+						<% for( var i = 0; i < allLocations.length; i++) {%>
+						<tr>
+							<th><%= allLocations[i] %></th>
+							<th><%= address[i] %></th>
+						</tr>
+						<% }%>
+					</table>
+				</aside>
+			</div>
+		</div>
+	</div>
+
+	<footer id="main-footer">
+		<p>© Lefteris Eleftheriou - Internet & Applications 2020</p>
+	</footer>
+</body>
+
+</html>

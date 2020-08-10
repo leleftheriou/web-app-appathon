@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rain Not Run</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</link>
+
+  <script type="text/javascript">
+    var created = 0;
+
+    function createOptions() {
+
+      if (created == 1) {
+        removeDrop();
+      }
+
+      var firstMenu = document.getElementById("firstMenu");
+      var secondMenu = document.getElementById("secondMenu");
+
+      if (firstMenu.value == "Athens") {
+        var optionAth = document.createElement("option");
+        optionAth.text = "Athens";
+        secondMenu.add(optionAth, secondMenu.options[null]);
+        // newDropdown.add(optionAth,newDropdown.options[null]);
+
+        var optionAch = document.createElement("option");
+        optionAch.text = "Acharnes";
+        secondMenu.add(optionAch, secondMenu.options[null]);
+
+        var optionAgi = document.createElement("option");
+        optionAgi.text = "Agios Dimitrios";
+        secondMenu.add(optionAgi, secondMenu.options[null]);
+
+        var optionAig = document.createElement("option");
+        optionAig.text = "Aigaleo";
+        secondMenu.add(optionAig, secondMenu.options[null]);
+
+        var optionAli = document.createElement("option");
+        optionAli.text = "Alimos";
+        secondMenu.add(optionAli, secondMenu.options[null]);
+
+        var optionChai = document.createElement("option");
+        optionChai.text = "Chaidari";
+        secondMenu.add(optionChai, secondMenu.options[null]);
+
+        var optionCha = document.createElement("option");
+        optionCha.text = "Chalandri";
+        secondMenu.add(optionCha, secondMenu.options[null]);
+
+        var optionCho = document.createElement("option");
+        optionCho.text = "Cholargos";
+        secondMenu.add(optionCho, secondMenu.options[null]);
+
+        var optionFil = document.createElement("option");
+        optionFil.text = "Filothei";
+        secondMenu.add(optionFil, secondMenu.options[null]);
+
+        var optionGal = document.createElement("option");
+        optionGal.text = "Galatsi";
+        secondMenu.add(optionGal, secondMenu.options[null]);
+
+        var optionGly = document.createElement("option");
+        optionGly.text = "Glyfada";
+        secondMenu.add(optionGly, secondMenu.options[null]);
+
+        var optionEll = document.createElement("option");
+        optionEll.text = "Elliniko";
+        secondMenu.add(optionEll, secondMenu.options[null]);
+
+        var optionIli = document.createElement("option");
+        optionIli.text = "Ilion";
+        secondMenu.add(optionIli, secondMenu.options[null]);
+
+        var optionKal = document.createElement("option");
+        optionKal.text = "Kallithea";
+        secondMenu.add(optionKal, secondMenu.options[null]);
+
+        var optionKol = document.createElement("option");
+        optionKol.text = "Kolonaki";
+        secondMenu.add(optionKol, secondMenu.options[null]);
+
+        var optionMar = document.createElement("option");
+        optionMar.text = "Marousi";
+        secondMenu.add(optionMar, secondMenu.options[null]);
+
+        var optionPer = document.createElement("option");
+        optionPer.text = "Peristeri";
+        secondMenu.add(optionPer, secondMenu.options[null]);
+
+        var optionPir = document.createElement("option");
+        optionPir.text = "Piraeus";
+        secondMenu.add(optionPir, secondMenu.options[null]);
+
+        var optionVou = document.createElement("option");
+        optionVou.text = "Voula";
+        secondMenu.add(optionVou, secondMenu.options[null]);
+
+        var optionZog = document.createElement("option");
+        optionZog.text = "Zografos";
+        secondMenu.add(optionZog, secondMenu.options[null]);
+
+      } else if (firstMenu.value == "Thessaloniki") {
+
+        var optionThe = document.createElement("option");
+        optionThe.text = "Thessaloniki";
+        secondMenu.add(optionThe, secondMenu.options[null]);
+
+        var optionEvo = document.createElement("option");
+        optionEvo.text = "Evosmos";
+        secondMenu.add(optionEvo, secondMenu.options[null]);
+
+        var optionKalam = document.createElement("option");
+        optionKalam.text = "Kalamaria";
+        secondMenu.add(optionKalam, secondMenu.options[null]);
+
+        var optionOra = document.createElement("option");
+        optionOra.text = "Oraiokastro";
+        secondMenu.add(optionOra, secondMenu.options[null]);
+
+        var optionPan = document.createElement("option");
+        optionPan.text = "Panorama";
+        secondMenu.add(optionPan, secondMenu.options[null]);
+
+        var optionTher = document.createElement("option");
+        optionTher.text = "Thermi";
+        secondMenu.add(optionTher, secondMenu.options[null]);
+
+        var optionVolv = document.createElement("option");
+        optionVolv.text = "Volvi";
+        secondMenu.add(optionVolv, secondMenu.options[null]);
+      }
+      created = 1
+    }
+
+    function removeDrop() {
+      var d = document.getElementById("secondMenu");
+
+      var length = d.options.length;
+      for (i = length - 1; i >= 0; i--) {
+        d.options[i] = null;
+      }
+
+
+    }
+  </script>
+
+
+
+<body>
+  <header id="main-header">
+    <div class="Head-container">
+      <abbr title="Home Page"><a href="index.html"><img src="images/logo.png" width="100" alt="logo"> </a></abbr>
+
+    </div>
+  </header>
+
+  <nav id="navbar">
+    <div class="container">
+      <ul>
+        <li><a class="button" href="index.html">Home</a></li>
+        <li><a class="button" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="Main-foto">
+    <div class="container">
+      <section id="main">
+        <h1>Welcome</h1>
+        <p>Please choose the city and place of your choise to see the weather conditions and places to run.</p>
+      </section>
+      <form class="my-form" action="/" method="post">
+        <div class="form-group">
+          <label>City: </label>
+          <select id="firstMenu" onchange="createOptions()" name="cityName">
+            <option value=""></option>
+            <option value="Athens">Athens</option>
+            <option value="Thessaloniki">Thessaloniki</option>
+          </select>
+          <label>Place: </label>
+          <select id="secondMenu" name="municipalityName">
+            <option value=""> </option>
+          </select>
+        </div>
+        <input class="button1" type="submit" value="Submit" name="">
+      </form>
+    </div>
+  </div>
+
+  <footer id="main-footer">
+    <p>© Lefteris Eleftheriou - Internet & Applications 2020</p>
+  </footer>
+</body>
+
+</html>
